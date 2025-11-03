@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #231942;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: #9f86c0;
+}
+a:hover {
+  /* change the color when you hover your mouse over it <a> */
+  color: #be95c4;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 5px 0 0;
+  color: #e0b1cb;
+  font-size: 2.2em;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+main div {
+  background: rgba(94, 84, 142, 0.15); /* semi-transparent background */
+  border: 1px solid #be95c4;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  margin-top: 0;
+  color: #e0b1cb;
+  font-size: 1.5em;
+}
+
+.about {
+  background: rgba(94, 84, 142, 0.2);
+}
+
+.services {
+  background: rgba(159, 134, 192, 0.15);
+}
+
+.services p {
+  color: #ede6ff;
+}
+
+#pricing {
+  background: rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+#pricing p {
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  color: #ede6ff;
+  padding: 16px 0 28px;
+  border-top: 1px solid #be95c4;
+}
+
+/*
+Project 2 5 advanced selectors, ia had some in project 1 and 2 are class or ID
+*/
