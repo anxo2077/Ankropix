@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Ankropix</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/images/icon.png" />
-    <!-- Favicon for the page-->
-  </head>
-  <body>
-    <!-- Header with banner and title -->
-    <header>
-      <h1>Ankropix</h1>
-      <img src="images/banner.png" alt="Ankropix banner" class="banner" />
-    </header>
-    <main>
-      <div class="about">
-        <!-- Main content about the company (i need improve it for the proyect two) -->
-        <h2>About Us</h2>
-        <p>
-          We are a company dedicated to providing the best hosting services.
-        </p>
-        <p>We also wanted to play with our friends at a low price.</p>
-      </div>
-      <!--second containe is about the services that we have-->
-      <div class="services">
-        <h2>Our service</h2>
-        <p>Minecraft server hosting with low latency</p>
-        <p>Discord bot hosting avalible 24/7</p>
-      </div>
-      <!--third container is about the price-->
-      <div id="pricing">
-        <h2>Pricing</h2>
-        <p>Starting at just $5 per month</p>
-        <p>No extra fees, cancel anytime</p>
-      </div>
-    </main>
-    <footer>
-      <p>
-        Don't hesitate to contact us for more information on our
-        <a href="https://discordstatus.com/" target="_blank">Discord</a>.
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ankropix</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="/images/icon.png" />
+  <!-- Favicon for the page-->
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">Ankropix</span>
+      </a>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" class="nav-link active">HOME</a>
+        </li>
+        <li>
+          <a href="services.html" class="nav-link">SERVICES</a>
+        </li>
+        <li>
+          <a href="pricing.html" class="nav-link">PRICING</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-link">ABOUT</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link-contact">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-container">
+      <h1 class="info-title">
+        <span class="info-highlight">Premium</span> Server Hosting
+      </h1>
+      <p class="info-description">
+        Experience top-tier server hosting with Ankropix. Reliable,
+        high-performance, Starting at just $5/month.
       </p>
-      <!-- Link to Discord status page because i don't have a support page yet -->
+      <div class="info-button">
+        <a href="services.html" class="info-btn">EXPLORE SERVICES</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats section -->
+  <section class="stats-section">
+    <div class="container">
+      <h2 class="stats-title">Ankropix in Numbers</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">🎮</div>
+          <div class="stat-number">3645</div>
+          <div class="stat-label">Active Players</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-number">99</div>
+          <div class="stat-label">% Uptime</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌐</div>
+          <div class="stat-number">6</div>
+          <div class="stat-label">Server Locations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
       <p>&copy; 2025 Ankropix. All rights reserved.</p>
-    </footer>
-  </body>
+      <p>Built with ❤️ for gamers</p>
+    </div>
+</body>
+
 </html>
-
-<!-- I used AI to create the banner and the icon used on the page and the VS code extension called Prettier to format the code on the html and the css files-->
-
-<!--
-Project 2, i just added two containers (services and pricing) so now i have 3 and 2 with class
-and 1 with ID.
--->
