@@ -342,3 +342,44 @@ input {
   background-color: var(--bg-card);
   color: var(--text-primary);
 }
+
+/* Services Page */
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-detail {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 3rem;
+  margin-bottom: var(--spacing-xl);
+  padding: 3rem;
+  background: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.service-detail:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 30px rgba(232, 121, 249, 0.3);
+}
+
+.service-detail-icon {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.service-detail-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.service-detail-content > p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
