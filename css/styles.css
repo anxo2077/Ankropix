@@ -45,6 +45,18 @@ img {
   display: block;
 }
 
+input,
+select,
+textarea,
+button {
+  font-family: inherit; /* Inherit font from parent */
+  font-size: inherit; /* Inherit font size from parent */
+  line-height: inherit; /* Inherit line height from parent */
+  border: none; /* Remove default borders */
+  outline: none; /* Remove outline on focus */
+  background: transparent; /* Remove default background */
+}
+
 /*Navigation Bar*/
 .navbar {
   position: fixed;
@@ -259,4 +271,74 @@ img {
   padding: 0 2rem;
   text-align: center;
   color: var(--text-secondary);
+}
+
+/* Contact page */
+.contact-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  padding-top: 10rem;
+}
+
+.contact-header-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  font-size: clamp(2rem, 3vw, 2rem);
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+  min-height: 60vh;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  transition: var(--transition);
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 10px rgba(232, 121, 249, 0.3);
+}
+
+textarea {
+  border: 0.5px solid var(--accent-primary);
+  resize: vertical;
+  min-height: 150px;
+  max-height: 400px;
+  border-radius: 10px;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+input {
+  height: 45px;
+  border: 0.5px solid var(--accent-primary);
+  border-radius: 10px;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
 }
