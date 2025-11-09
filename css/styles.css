@@ -3,13 +3,9 @@
   --bg-secondary: #1a1f2e;
   --bg-card: #1e2738;
   --accent-primary: #e879f9;
-  --accent-secondary: #d946ef;
   --text-primary: #ffffff;
   --text-secondary: #94a3b8;
   --border-color: #2d3748;
-
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
@@ -49,12 +45,12 @@ input,
 select,
 textarea,
 button {
-  font-family: inherit; /* Inherit font from parent */
-  font-size: inherit; /* Inherit font size from parent */
-  line-height: inherit; /* Inherit line height from parent */
-  border: none; /* Remove default borders */
-  outline: none; /* Remove outline on focus */
-  background: transparent; /* Remove default background */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 
 /*Navigation Bar*/
@@ -409,4 +405,35 @@ input {
 
 .pricing-features li:last-child {
   margin-bottom: 2.5rem;
+}
+
+/* About Page */
+.about-container {
+  border: 1px solid var(--accent-primary);
+  max-width: 800px;
+  border-radius: 16px;
+  background-color: var(--bg-card);
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-height: 70vh;
+}
+
+.about-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: var(--spacing-xl) 0;
+  color: var(--text-primary);
+}
+
+.about-container p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-lg);
+  padding: 0 1rem;
+}
+
+.about-cta {
+  text-align: center;
+  margin: var(--spacing-xl);
 }
