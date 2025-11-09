@@ -306,25 +306,6 @@ button {
   gap: 1.5rem;
 }
 
-.contact-input,
-.contact-textarea {
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  background-color: var(--bg-card);
-  color: var(--text-primary);
-  font-size: 1rem;
-  font-family: var(--font-primary);
-  transition: var(--transition);
-}
-
-.contact-input:focus,
-.contact-textarea:focus {
-  outline: none;
-  border-color: var(--accent-primary);
-  box-shadow: 0 0 10px rgba(232, 121, 249, 0.3);
-}
-
 textarea {
   border: 0.5px solid var(--accent-primary);
   resize: vertical;
@@ -381,5 +362,51 @@ input {
   color: var(--text-secondary);
   font-size: 1.1rem;
   line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+/* Pricing Page */
+.pricing-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.pricing-card {
+  background-color: var(--bg-card);
+  padding: var(--spacing-lg);
+  border-radius: 16px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+.pricing-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 30px rgba(232, 121, 249, 0.3);
+}
+.pricing-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+.pricing-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+}
+.pricing-features {
+  list-style-type: none;
+  padding: 0;
+}
+.pricing-feature {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-features li:last-child {
   margin-bottom: 2.5rem;
 }
