@@ -15,6 +15,7 @@ Includes:
 - Home page with a short introduction to Ankropix.
 - Services page describing hosting options.
 - Pricing page with simple plan cards.
+- Gallery with an interactive image slider.
 - About page with basic information about the project.
 - Contact page with a basic form (no backend).
 
@@ -23,7 +24,7 @@ Includes:
 - Any modern web browser (Chrome, Firefox, Edge, etc.)
 - Files saved in the correct structure
 
-No JavaScript, database, or server is required.
+No Database or server is required.
 
 ## How to Open
 
@@ -46,11 +47,17 @@ No JavaScript, database, or server is required.
 - `about.html`  
   Explains what Ankropix is and its purpose.
 
+- `gallery.html`  
+  Gallery with an sllider function.
+
 - `contact.html`  
   Simple contact form (name, email, message).
 
 - `styles.css`  
   Handles layout, colors, fonts, buttons, and sections.
+
+- `main.js`  
+  JavaScript for slider functions.
 
 ## Features
 
@@ -58,7 +65,9 @@ No JavaScript, database, or server is required.
 - Simple and clean.
 - Reusable header and footer.
 - Basic typography and color scheme.
+- Intecractive image gallery.
 
 ## Future Improvements
 
 - Make the layout fully responsive.
+- add header to js
