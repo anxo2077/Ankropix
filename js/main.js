@@ -1,6 +1,3 @@
-// Gallery Slider JavaScript
-// This script handles the image gallery navigation
-
 // Array of gallery images with their captions
 const galleryImages = [
   { src: "images/mc1.png", caption: "Minecraft Server - Survival World" },
