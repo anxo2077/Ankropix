@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ankropix - Gallery</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/icon.png" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="nav-logo">
+          <span>Ankropix</span>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" class="nav-link">HOME</a>
+          </li>
+          <li>
+            <a href="services.html" class="nav-link">SERVICES</a>
+          </li>
+          <li>
+            <a href="pricing.html" class="nav-link">PRICING</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="nav-link active">GALLERY</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">ABOUT</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link-contact">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="contact-header">
+      <div class="contact-header-container">
+        <h1 class="info-highlight">Gallery</h1>
+        <p class="contact-subtitle">
+          Take a look at our servers and community in action.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <!-- Main Image Display -->
+        <div class="gallery-main">
+          <button class="gallery-btn gallery-prev" id="prevBtn">
+            &#10094;
+          </button>
+          <div class="gallery-image-wrapper">
+            <img
+              src="images/mc1.png"
+              alt="Server Screenshot"
+              class="gallery-image"
+              id="mainImage"
+            />
+            <div class="gallery-caption" id="imageCaption">
+              Minecraft Server - Survival World
+            </div>
+          </div>
+          <button class="gallery-btn gallery-next" id="nextBtn">
+            &#10095;
+          </button>
+        </div>
+
+        <!-- Image Counter -->
+        <div class="gallery-counter">
+          <span id="currentIndex">1</span> / <span id="totalImages">6</span>
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="gallery-thumbnails" id="thumbnails">
+          <img
+            src="images/mc1.png"
+            alt="Thumbnail 1"
+            class="thumbnail active"
+            data-index="0"
+          />
+          <img
+            src="images/mc2.png"
+            alt="Thumbnail 2"
+            class="thumbnail"
+            data-index="1"
+          />
+          <img
+            src="images/mc3.png"
+            alt="Thumbnail 3"
+            class="thumbnail"
+            data-index="2"
+          />
+          <img
+            src="images/mc4.png"
+            alt="Thumbnail 4"
+            class="thumbnail"
+            data-index="3"
+          />
+          <img
+            src="images/mc5.png"
+            alt="Thumbnail 5"
+            class="thumbnail"
+            data-index="4"
+          />
+          <img
+            src="images/mc6.png"
+            alt="Thumbnail 6"
+            class="thumbnail"
+            data-index="5"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 Ankropix. All rights reserved.</p>
+        <p>Built with ❤️ for gamers</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
