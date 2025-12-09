@@ -48,15 +48,15 @@ No Database or server is required.
   Explains what Ankropix is and its purpose.
 
 - `gallery.html`  
-  Gallery with an sllider function.
+  Gallery with an slider function.
 
 - `contact.html`  
   Simple contact form (name, email, message).
 
-- `styles.css`  
+- `css/styles.css`  
   Handles layout, colors, fonts, buttons, and sections.
 
-- `main.js`  
+- `js/main.js`  
   JavaScript for slider functions.
 
 ## Features
@@ -65,7 +65,7 @@ No Database or server is required.
 - Simple and clean.
 - Reusable header and footer.
 - Basic typography and color scheme.
-- Intecractive image gallery.
+- Interactive image gallery.
 
 ## Future Improvements
 
