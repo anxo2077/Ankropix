@@ -99,5 +99,67 @@ thumbnails.forEach((thumb) => {
     goToImage(index);
   });
 });
+
+function initContactForm() {
+  const form = document.querySelector(".contact-form");
+  if (!form) return;
+
+  // RegEx patterns
+  const nameRegex = /^[a-zA-Z\s]{2,50}$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const messageRegex = /^[\s\S]{10,500}$/;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    let errors = [];
+
+    if (!nameRegex.test(name)) {
+      errors.push("Name must be 2-50 letters only.");
+    }
+    if (!emailRegex.test(email)) {
+      errors.push("Please enter a valid email address.");
+    }
+    if (!messageRegex.test(message)) {
+      errors.push("Message must be between 10 and 500 characters.");
+    }
+
+    if (errors.length > 0) {
+      alert("Please fix the following:\n\n" + errors.join("\n"));
+    } else {
+      alert("Message sent! We will get back to you soon.");
+      form.reset();
+    }
+  });
+}
+
+function animateStats() {
+  const statNumbers = document.querySelectorAll(".stat-number");
+  if (statNumbers.length === 0) return;
+
+  statNumbers.forEach(function (stat) {
+    const target = parseInt(stat.textContent);
+    let current = 0;
+    const step = Math.ceil(target / 60);
+
+    const interval = setInterval(function () {
+      current += step;
+      if (current >= target) {
+        current = target;
+        clearInterval(interval);
+      }
+      stat.textContent = current;
+    }, 20);
+  });
+}
+
 // Initialize when page loads
-document.addEventListener("DOMContentLoaded", initGallery);
+document.addEventListener("DOMContentLoaded", function () {
+  initContactForm();
+  animateStats();
+  initGallery();
+});
